@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="900" height="540" fill="#ffffff"/>
+<text x="450" y="38" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#172554">Online Job Recruitment Platform</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker></defs>
+<g font-family="Arial" font-size="15" text-anchor="middle" fill="#172554" stroke-width="1.5">
+<rect x="330" y="65" width="240" height="48" rx="10" fill="#dbeafe" stroke="#60a5fa"/><text x="450" y="94" stroke="none">Job Seeker / Company</text>
+<rect x="330" y="145" width="240" height="48" rx="10" fill="#e0f2fe" stroke="#38bdf8"/><text x="450" y="174" stroke="none">Web / Mobile Client</text>
+<rect x="330" y="225" width="240" height="48" rx="10" fill="#dcfce7" stroke="#4ade80"/><text x="450" y="254" stroke="none">Flask REST API</text>
+<rect x="70" y="335" width="220" height="62" rx="10" fill="#fef3c7" stroke="#f59e0b"/><text x="180" y="360" stroke="none">Job Service</text><text x="180" y="380" font-size="12" stroke="none">Search / job details</text>
+<rect x="340" y="335" width="220" height="62" rx="10" fill="#fce7f3" stroke="#f472b6"/><text x="450" y="360" stroke="none">Application Service</text><text x="450" y="380" font-size="12" stroke="none">Apply / status / history</text>
+<rect x="610" y="335" width="220" height="62" rx="10" fill="#ede9fe" stroke="#a78bfa"/><text x="720" y="360" stroke="none">SQLite Database</text><text x="720" y="380" font-size="12" stroke="none">Jobs + applications</text>
+</g>
+<g stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M450 113 V145"/><path d="M450 193 V225"/>
+<path d="M410 273 L180 335"/><path d="M450 273 V335"/><path d="M490 273 L720 335"/>
+</g>
+<text x="450" y="455" font-family="Arial" font-size="13" text-anchor="middle" fill="#64748b">Educational prototype • REST APIs • Local SQLite storage</text>
+</svg>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careerly — Find your next role</title>
+  <link rel="stylesheet" href="/frontend/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">c</span> careerly<span class="brand-dot">.</span></a>
+    <nav><a class="nav-active" href="#jobs">Find jobs</a><a href="#applications">My applications</a></nav>
+    <div class="profile"><span class="profile-dot">N</span><span>Job seeker</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Find work that<br> <em>moves you forward.</em></h1>
+        <p>Discover roles where your skills make a difference. Your next opportunity is closer than you think.</p>
+        <a class="hero-link" href="#jobs">Explore open roles <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card art-card-main"><div class="art-symbol">✳</div><div class="art-line wide"></div><div class="art-line"></div><div class="art-tags"><span>Creative</span><span>Growth</span></div></div>
+        <div class="floating-chip chip-top">✦ Your potential, unlocked</div>
+        <div class="floating-chip chip-bottom"><span class="green-pulse"></span> New roles added weekly</div>
+      </div>
+    </section>
+
+    <section class="search-panel" id="jobs">
+      <div class="search-label">SEARCH OPPORTUNITIES</div>
+      <form id="search-form" class="search-row">
+        <label class="search-input"><span>⌕</span><input id="keyword" type="search" placeholder="Job title, company, or location"></label>
+        <button class="primary-btn" type="submit">Search jobs <span>→</span></button>
+      </form>
+      <div class="quick-search"><span>Popular:</span><button data-keyword="Developer">Developer</button><button data-keyword="Data">Data</button><button data-keyword="Remote">Remote</button><button data-keyword="Chennai">Chennai</button></div>
+    </section>
+
+    <section class="jobs-section">
+      <div class="section-heading"><div><div class="eyebrow">HANDPICKED FOR YOU</div><h2>Explore opportunities</h2><p class="muted">Find a role that fits your ambition.</p></div><div class="job-count" id="job-count">Loading roles…</div></div>
+      <div id="jobs-list" class="jobs-grid"><div class="loading-card">Finding opportunities for you…</div></div>
+    </section>
+
+    <section class="applications-section" id="applications">
+      <div class="section-heading"><div><div class="eyebrow">KEEP TRACK</div><h2>Your applications</h2><p class="muted">See where your next chapter is headed.</p></div></div>
+      <form id="history-form" class="history-form"><label for="user-id">Your user ID</label><input id="user-id" type="number" min="1" value="10" required><button class="secondary-btn" type="submit">View applications</button></form>
+      <div id="history-list" class="history-list"><p class="muted">Enter your user ID to view submitted applications.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">c</span> careerly<span class="brand-dot">.</span></a><span>Built to connect people with possibilities.</span><span>Round 3 · System Design Project</span></footer>
+
+  <dialog id="apply-dialog">
+    <form id="apply-form" class="dialog-form">
+      <button type="button" class="dialog-close" id="close-dialog" aria-label="Close">×</button>
+      <div class="eyebrow">TAKE THE NEXT STEP</div><h2>Apply for this role</h2>
+      <p id="apply-job-name" class="muted"></p>
+      <input id="apply-job-id" type="hidden">
+      <label for="apply-user-id">User ID</label><input id="apply-user-id" type="number" min="1" value="10" required>
+      <label for="resume-url">Resume URL <span class="optional">(optional)</span></label><input id="resume-url" type="url" placeholder="https://example.com/resume.pdf">
+      <button class="primary-btn full-btn" type="submit">Submit application <span>→</span></button>
+      <div id="apply-message" class="form-message" role="status"></div>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
